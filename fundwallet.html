@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fund Wallet</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  <!---csss links starts-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">  
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"> 
+</head>
+<body>
+    <div class="row">
+        <i class="fas fa-arrow-left"></i>
+        <h5 class="fund"><strong>Fund Wallet</strong></h5>  
+       
+    </div>
+    <p class="registration-text">Fund your wallet using your debit card</p>
+    <a href="#" class="new-card"><i class="fas fa-plus"></i>Add new card</a>
+
+    <div class="">  <!----form begins-->
+        <form action="#" method="post">
+            <label for="exampleFormControlSelect1">Card</label>
+            <div class="control">
+                <select class="form-control card-control" id="select-card exampleFormControlSelect1" name="card" placeholder="select card">
+                    <option value="" disabled selected hidden class="grey">Select Card</option> <!---select card is a disabled option-->>
+                    <option value="card1">card1</option>
+                    <option value="card2">card2</option>
+                    <option value="card3">card3</option>
+                    <option value="card4">card4</option>
+                    <option value="card5">card5</option>
+                </select>
+                
+            </div>
+            <label>Amount</label>
+            <div class="control">
+                <input type="text" class="form-control" name="amount" placeholder="Amount" required>
+            </div>
+
+            <input type="submit" value="Fund Wallet" class="btn continue">
+        </form>
+    </div>    <!----form ends-->
+
+    
+    <script src="js/jquery-3.4.1.min.js"></script>   <!----js links-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/kalo.js"></script>
+</body>
+</html>

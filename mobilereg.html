@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Number Registeration</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  <!---csss links starts-->
+    <link rel="stylesheet" type="text/css" href="css/main.css"> 
+    
+     
+      <!-----css links ends here-->
+</head>
+<body>
+    <div class="row">
+        <h4 class="reg"><strong>Mobile Number <br> Registration</strong></h4>  
+        <a href="#" class="next2">Step 2 of 3</a>
+    </div>
+    <p class="registration-text">Enter your mobile number to receive a verification code</p>
+
+    <div class="">  <!----form begins-->
+        <form>
+                <label for ="exampleFormControlSelect1">Mobile Number</label>
+                <div class="control">
+                    <select id="select-country exampleFormControlSelect1" class="form-control country-control">
+                        <option value="NG">NG</option>
+                        <!-- <option value="TH">TH</option>
+                        <option value="US">US</option>
+                        <option value="SG">SG</option> -->
+                    </select>
+                    <input type="tel" id="mobile-number" class="form-control mobile-control" name="mobile-number"  required >
+                    
+                </div>
+
+                <input type="submit" value="Get Code" class="btn continue">
+        </form>
+    </div>    <!----form ends-->
+
+ 
+
+
+
+    
+    <script src="js/jquery-3.4.1.min.js"></script>   <!----js links-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cleave.js"></script>
+    <script src="js/cleave-phone.i18n.js"></script>
+    <script src="js/kalo.js"></script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add New Card</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  <!---csss links starts-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">  
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css"> 
+</head>
+<body>
+    <div class="row">
+        <i class="fas fa-arrow-left"></i>
+        <h5 class="fund"><strong>Add New Card</strong></h5>        
+    </div>
+    <p class="registration-text">Enter card details</p>
+
+    <div class="">  <!-----Form begins-->
+        <form>
+                <label>Card Number</label>
+                <div class="control">
+                    <input type="tel"class="form-control" id="card-number"  name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                </div>
+            
+                <label>Cardholder's Full Name</label>
+                <div class="control">
+                    <input type="text"class="form-control"  name="card-holder-name" placeholder="Firstname and Lastname" required>
+                </div>
+                
+                <div class="expiry-date">
+                    <label>Expiry Date</label>
+                    <div class="control">
+                        <input type="tel" class="form-control month" id="month"  maxlength="2" name="month" placeholder="MM" required>
+                        <input type="tel" class="form-control year" id="year"  maxlength="2"  name="year" placeholder="YY" required>
+                    </div>
+                </div>
+
+                <div class="card-cvv">
+                    <label>CVV</label>
+                    <div class="control">
+                        <input type="tel" class="form-control cvv" id="cvv" name="cvv" maxlength="3" placeholder="CVV" required>
+                    </div>
+                </div>
+                <i class="fas fa-cc-mastercard"></i>
+                <i class="fas fa-cc-visa"></i>
+                <i class="fas fa-cc-amex"></i>
+           
+            <input type="submit" value="Add Card" class="btn continue">
+          
+        </form>  <!----Form ends-->
+   
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>   <!----js links-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cleave.js"></script>
+    <script src="js/kalo.js"></script>
+</html>
