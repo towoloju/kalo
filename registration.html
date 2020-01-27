@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">   <!---css links--->
+    <link rel="stylesheet" type="text/css" href="css/main.css">      
+</head>
+<body>
+    <div class="row">
+        <h3 class="reg"><strong>Registration</strong></h3> <!----Main heading *bold*-->
+        <a href="#" class="next">Step 1 of 3</a>
+    </div>
+    <p class="registration-text">Enter your name, email and choose a PIN number to get started</p> <!-----text here-->
+
+    <div class="">  <!-----Form begins-->
+        <form>
+                <label>Full Name</label>
+                <div class="control">
+                    <input type="text"class="form-control"  name="fullname" placeholder="Firstname and Lastname" required>
+                </div>
+            
+                <label>Email</label>
+                <div class="control">
+                    <input type="email"class="form-control"  name="email" placeholder="Email" required>
+                </div>
+           
+                <label>Pin</label>
+                <div class="control">
+                    <input type="tel" class="form-control" class="info" id="pin" name="pin" placeholder="Choose a 5 digit pin" required>
+                </div>
+                <p id="pin_msg"></p>
+                
+            <input type="submit" value="Continue" onclick="pinValidation()" class="btn continue">
+          
+        </form>  <!----Form ends-->
+   
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>   <!----js links-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/kalo.js"></script>
+</body>
+</html>
