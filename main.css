@@ -1,0 +1,390 @@
+/*
+Project:Kalo
+Project Owner: Ayodeji Shadare
+UI/UX:
+Developers: Akinbode Oluwatowo (FE) & Oluwasegun (BE)
+Version:1.0
+*/
+
+/*General Styles*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-size:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#272727;
+    max-width:375px;
+    overflow-x: hidden;
+}
+.row{
+    padding-top:50px;
+    padding-right:50px;
+    padding-left:35px;
+    max-width:375px;
+}
+.form-control{
+    width:350px;
+}
+.mobile-control{
+    width:270px !important;
+    float:right;
+    margin-top:-32px;
+    margin-right:20px;
+}
+.country-control{
+    width: 70px !important;
+    font-size:12px;
+    margin-left:5px;
+}
+.control card-control{
+    font-size:12px !important;
+}
+
+
+.reg{
+    font-size:17px;
+    letter-spacing:1px;
+    color: #8da05e;
+} 
+form{
+    margin-left:10px;
+    margin-top:30px;
+}
+.control{
+    margin-bottom:10px;
+  
+}
+label{
+    font-size:13px;
+    color:#2a2c42;
+    padding-top:8px;
+}
+input[type=text],
+input[type=email],
+input[type=tel]{
+    border-radius: 5px;
+    margin-bottom:7px;
+    width:350px;
+    padding:10px;
+    font-size:12px;
+    color:#2a2c42;
+    border:1px soild #e9eddf;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder{
+    color:rgb(165, 165, 165);
+    opacity:0.6;
+}
+.registration-text{
+    font-size:15px;
+    margin-left:18px;
+    margin-top:20px;
+    color:#2a2c42;
+    text-align:left;
+    width:80%;
+    line-height:150%;
+}
+.continue{
+    margin-top:17px;
+    background-color:#798851;
+    color:#fff;
+    width:350px;
+    padding:10px;
+    font-size:17px;
+    transition:color 0.1s;
+}
+.continue:hover,
+.continue:active{
+    color:#fff;
+}
+/*Welcome*/
+.welcome{
+    background-color: rgb(204, 204, 204);
+}
+.carousel-caption .skip{
+   margin-left:250px;
+   margin-top: 200px;
+    color:#fcc050;
+}
+.carousel-item img{
+    margin-top:120px;
+    margin-left:40px;
+    height:200px;
+    width:300px;
+}
+.carousel-indicators .active{
+    background-color:#fcc050;
+}
+.get-started{
+    text-decoration: none;
+    margin-bottom:40px;
+    text-decoration:none;
+    border: 1px solid #8da05e;
+    border-radius:2px;
+    color: #fff !important;
+    background-color: #8da05e;
+    padding: 10px 80px;
+    font-size: 18px;
+}
+.button-link{
+    margin-top:30px;
+}
+.img-blank{
+    margin-bottom:10px;
+    height: 40vh;
+    background-color: white;
+}
+.carousel-caption{
+    margin-bottom:30px;
+}
+.home-caption-one,
+.home-caption-two{
+    margin-top:-90px;
+    font-weight:bolder;
+    word-spacing: 1px;
+    font-size:23px;
+    color: #8da05e;
+}
+.home-caption-one{
+    margin-top:-150px !important;
+}
+.skip{
+    top:600px;
+}
+/*User Registration*/
+.next{
+    float: right;
+    margin-left:100px;
+    color:#fcc050;
+    font-size:13px;
+    margin-top:5px;
+}
+.next2{
+    float: right;
+    margin-left:80px;
+    color:#fcc050;
+    font-size:13px;
+    margin-top:5px;
+}
+.next:hover,
+.next2:hover{
+    color: rgb(143, 122, 122);
+    text-decoration: none;
+}
+.info{
+    color:#fcc050;
+}
+
+
+/*Verification.html starts*/
+.form-verification{
+    margin-left:90px;
+}
+input[type=text].verification{
+    width:30px;
+    border:transparent;
+    border-radius:0px;
+    border-bottom:1px solid #555;
+    float:left;
+    margin-top:70px;
+    margin-right:10px;
+    margin-left:0px;
+}
+input[type=text].verification::before{
+    content:" ";
+    display: hidden;
+}
+input[type=text].verification:focus{
+    outline: none;
+}
+.resend{
+    text-align:center;
+    margin-top:20px;
+    color:#fcc050;
+    font-size:13px;
+}
+.change-number{
+    margin-left:125px;
+    font-size:13px;
+    text-decoration: underline;
+    color: #8da05e;
+    
+}
+
+/*fund wallet starts here*/
+.new-card{
+    color:#8da05e;
+    margin-left:20px;
+    font-size:15px;
+}
+.new-card:hover{
+    color:#8da05e;
+    text-decoration: none;
+    
+}
+/*new card*/
+.expiry-date .control .month {
+    width:45px  !important;
+    text-align:center;
+}
+.expiry-date .control .year{
+    float:right;
+    text-align:center;
+    margin-right:275px;
+    margin-top:-39px;
+    width:45px
+}   
+.card-cvv{
+    float:right !important;  
+    margin-top:-77px;
+    margin-right: 150px;
+}
+.control .cvv{
+    width:65px;
+   
+}
+/*Card OTP*/
+.no-otp{
+text-align:center;
+margin-top:20px;
+font-size:13px;
+}
+.resend-otp{
+    text-decoration: underline;
+    float:right;
+    margin-right:100px;
+    margin-top:-35px;
+    color:#fcc050;
+    font-size:13px;
+}
+.resend-otp:hover{
+    color:#2a2c42;
+}
+/*Complete*/
+.container{
+    border-radius: 8px;
+    box-shadow: #000;
+    background-color: #fcc050;
+    margin-top:50px;
+    margin-right:28px;
+    width:320px;
+    height:170px;
+    color:#000;
+}
+.text{
+    font-size:16px;
+    padding-top:45px;
+   text-align: center;
+}
+.price{
+    font-size:20px;
+    text-align:center;
+    font-weight:bold;
+}
+.rate{
+    margin-top:60px;
+    text-align:center;
+    font-size:16px;
+}
+/*Wallet*/
+.wallet-text{
+    padding-top:30px
+}
+.wallet-balance{
+    float: right;
+    margin-top:-40px;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:150px;
+}
+.fund-wallet {
+    color:#272727;
+   float:right;
+   border:1px solid #fff;
+   border-radius:8px;
+   background-color:#fff;
+   padding: 8px 18px;
+   margin-right:-115px;
+   margin-top:35px;
+  
+    
+}
+.fund-wallet:hover{
+    text-decoration:none;
+    color:#272727;
+}
+.wallet-history{
+    width:375px;
+    padding:20px 30px;
+}
+.wallet-history-one{
+    margin-top:10px;
+}
+.wallet-history-one:after{
+    display: block;
+    content: '';
+    height:0.7px;
+    width: 375px;
+    margin-left:-30px;
+    background-color:#d3d2d2;
+}
+.day{
+    color:#6b6a6a;
+    font-size:13px;
+}
+.success{
+    margin-top:10px;
+}
+.success:after{
+    display: block;
+    content:'';
+    height: 0.7px;
+    width: 375px;
+    margin-left:-30px;
+    background-color:#d3d2d2;
+}
+.funded-wallet{
+    letter-spacing:1px;
+    font-weight:bold;
+}
+.result-success,
+.result-fail{
+    font-size:12px;
+    margin-top:-38px;
+    float:right;
+    color:green;
+}
+.result-fail{
+    color:red
+}
+.date{
+    font-size:10px; 
+    margin-top:-7px;
+    margin-left:12px;
+
+}
+.wallet-price{
+    float:right;
+    font-size:20px;
+    margin-top:-40px;
+    font-weight:bold;
+}
+/*Promotions*/
+.promotions-image{
+    margin-left:70px;
+    width:70%;
+    height:50%;
+}
+.promotions-text p{
+    text-align:center;
+    margin-top:30px;
+    /* padding-left:50px; */
+    line-height:25px;
+}
+ .coupon-code{
+    color:#8da05e;
+}
